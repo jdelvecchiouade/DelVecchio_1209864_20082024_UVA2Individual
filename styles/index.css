@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* GENERAL */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  font-size: 18px;
+  color: #313d5a;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Robot", sans-serif;
+}
+
+header {
+  background-color: #8b9eb7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  height: auto;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+}
+
+main {
+  background-color: #313d5a;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 10vh;
+  background-color: #8b9eb7;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HOME */
+
+#home-container {
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#home-container {
+  text-align: center;
+}
+
+/* Sobre Mí */
+
+#sobre-mi-container {
+  height: 100%;
+  padding: 40px 0;
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sobre-mi-container p {
+  font-size: 18px;
+  text-align: center;
+}
+
+#sobre-mi {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#sobre-mi h2 {
+  font-size: 48px;
+}
+
+#sobre-mi-conocimientos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  font-weight: 500;
+}
+
+#sobre-mi-conocimientos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 24px;
+}
+
+#sobre-mi-conocimientos div ul {
+  list-style: none;
+  text-align: center;
+}
+
+#sobre-mi-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#sobre-mi-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Curriculum */
+
+#curriculum-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#curriculum-container > section {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 100px;
+}
+
+.curriculum-section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.curriculum-section-title h2 {
+  margin: 15px 0;
+}
+
+.curriculum-section-title h4,
+li,
+a {
+  font-weight: 300;
+}
+
+.curriculum-section-title ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.curriculum-section-title a:hover {
+  color: #8b9eb7;
+  font-weight: 500;
+}
+
+/* SERVICIOS */
+
+#servicios-container {
+  padding: 0 50px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+#servicios-container h2 {
+  font-size: 72px;
+}
+
+#servicios-container li {
+  font-size: 36px;
+}
+
+/* CONTACTO */
+
+#contacto-section {
+  padding: 0 200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+#contacto-section p {
+  font-size: 72px;
+  font-weight: 500;
+}
+
+#contacto-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #8b9eb7;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+form input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  background-color: #313d5a;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 32px;
+  font-weight: 500;
+  border: none;
+  color: #ffffff;
+}
+
+form button:hover {
+  transition: 0.5s;
+  background-color: #ffffff;
+  color: #313d5a;
+  cursor: pointer;
+}
+
+/* PARA TABLET */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header nav ul li a {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  #home-container {
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  #sobre-mi-conocimientos {
+    gap: 50px;
+  }
+
+  #curriculum-container > section {
+    grid-gap: 50px;
+  }
+
+  .curriculum-section-title h2 {
+    font-size: 36px;
+  }
+
+  .curriculum-section-title h4,
+  li,
+  a {
+    font-size: 18px;
+  }
+
+  #servicios-container h2 {
+    font-size: 48px;
+  }
+
+  #servicios-container li {
+    font-size: 24px;
+  }
+
+  #contacto-section p {
+    font-size: 48px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+  header {
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  main {
+    min-height: 60vh;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer {
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* HOME */
+  #home-container {
+    font-size: 14px;
+  }
+
+  #home-container img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* SOBRE MI */
+
+  #sobre-mi-container {
+    overflow: hidden;
+  }
+  #sobre-mi-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #sobre-mi-container h2 {
+    font-size: 24px;
+  }
+
+  #sobre-mi-container p {
+    font-size: 12px;
+  }
+
+  #sobre-mi-conocimientos div li {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #sobre-mi-conocimientos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #sobre-mi-container {
+    padding: 10px 0;
+    gap: 10px;
+    flex-direction: column;
+  }
+  #sobre-mi-container div {
+    gap: 20px;
+  }
+
+  /* Curriculum */
+
+  #curriculum-container section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  /* Servicios */
+
+  #servicios-container h2 {
+    font-size: 36px;
+  }
+  #servicios-container ul li {
+    font-size: 18px;
+  }
+
+  /* Contacto */
+
+  #contacto-section {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #contacto-section div,
+  li,
+  label {
+    font-size: 16px;
+  }
+
+  #contacto-section div p {
+    padding: 0 10px;
+    font-size: 48px;
+  }
+
+  #contacto-section div {
+    padding: 20px;
+  }
+
+  #contacto-section form button {
+    width: 80%;
+    margin: auto;
+  }
+
+  form {
+    font-size: 14px;
+    width: 100%;
+  }
+  .hidden {
+    display: none;
+  }
+}
